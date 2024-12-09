@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<title>Formulario Registro</title>
+<link rel="stylesheet" href="Stylesformulario.css">
+</head>
+
+<header>
+    <div class="container">
+        <p class="logo">¡Adoptame!</p>
+        <nav>
+            <a href="index.html">Sobre nosotros</a>
+            <a href="index.html">Nuestras Familias</a>
+            <a href="index.html">Como adoptar</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+<section class="Registro">
+    <h4>Empieza a adoptar</h4>
+        <form onsubmit="event.preventDefault(); location.reload();">
+        <label for="nombres">Nombre<span class="required-label">*</span></label>
+            <input class="pasos" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+        <label for="apellidos">Apellido<span class="required-label">*</span></label>
+            <input class="pasos" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+        <label>Género:</label><br>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+        <label for="genero_masculino">Masculino</label><br>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino">
+        <label for="genero_femenino">Femenino</label><br><br>
+        <label for="correo">Correo<span class="required-label">*</span></label>
+            <input class="pasos" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <label for="Contraseña">Contraseña<span class="required-label">*</span></label>
+            <input class="pasos" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña" required>
+                <p>Estoy de acuerdo con <a href="index.html">Terminos y Condiciones</a></p>
+                <button type="submit">Enviar</button>
+</section>
+
+<section id="mapa">
+    <h4>DONDE NOS UBICAMOS</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.2503503922976!2d-4.557037723567007!3d36.74056147105811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e0!3m2!1ses!2ses!4v1733775639090!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section> 
+
+
+<footer class="footer">
+    <ul class="social-iconos">
+        <li class="iconos">
+            <a href="" class="icono-solo">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </li>
+        <li class="iconos">
+            <a href="" class="icono-solo">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </li>
+        <li class="iconos">
+            <a href="" class="icono-solo">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </li>
+        <li class="iconos">
+            <a href="" class="icono-solo">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </li>
+        <li class="iconos">
+            <a href="" class="icono-solo">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+        </li>
+    </ul>
+    <ul class="menu">
+        <li class="menu-datos">
+            <a href="index.html" class="menu-iconos"> Inicio </a>
+        </li>
+        <li class="menu">
+            <a href="Contactanos.html" class="menu-iconos"> Contacto </a>
+        </li>
+        <li class="menu">
+            <a href="index.html" class="menu-iconos"> Video </a>
+        </li>
+        <li class="menu">
+            <a href="index.html" class="menu-iconos"> Sobre nosotros </a>
+        </li>
+    </ul>
+    <p class="texto">@Adoptame | Todos los derechos reservados</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
